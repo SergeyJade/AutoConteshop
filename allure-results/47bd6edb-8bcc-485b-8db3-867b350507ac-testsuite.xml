@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1641650184373' stop='1641650184469'>
+    <name>Доабвление товара в корзину</name>
+    <title>Доабвление товара в корзину</title>
+    <test-cases>
+        <test-case start='1641650184373' status='broken' stop='1641650184468'>
+            <name>Добавление</name>
+            <title>Добавление</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.71'/>
+            </parameters>
+            <steps>
+                <step start='1641650184376' status='passed' stop='1641650184466'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='d0d34fed-a555-46e3-8834-5771135b37f6-attachment.png' type='image/png' size='5496'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Parameter for "url" command needs to be type of string</message>
+                <stack-trace>Error: Parameter for "url" command needs to be type of string
+                    at Browser.url (E:\AutoConteshop\node_modules\webdriverio\build\commands\browser\url.js:42:15)
+                    at Browser.wrapCommandFn (E:\AutoConteshop\node_modules\@wdio\utils\build\shim.js:131:38)
+                    at async Context.&lt;anonymous> (E:\AutoConteshop\test\specs\addingItemCart.js:7:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

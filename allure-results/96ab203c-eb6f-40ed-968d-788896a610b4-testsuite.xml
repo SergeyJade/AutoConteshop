@@ -1,0 +1,71 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1641654305630' stop='1641654310032'>
+    <name>Доабвление товара в корзину</name>
+    <title>Доабвление товара в корзину</title>
+    <test-cases>
+        <test-case start='1641654305631' status='broken' stop='1641654310031'>
+            <name>Добавление</name>
+            <title>Добавление</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.71'/>
+            </parameters>
+            <steps>
+                <step start='1641654305633' status='passed' stop='1641654305786'>
+                    <name>POST /session/:sessionId/window/rect</name>
+                    <title>POST /session/:sessionId/window/rect</title>
+                    <attachments>
+                        <attachment title='Request' source='57c78324-9fd8-4b6e-a52b-f530c7eb8049-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='fd4565b2-b3bf-4de2-bfa9-46c82ee6e12d-attachment.json' type='application/json' size='59'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1641654305786' status='passed' stop='1641654308279'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='697180f2-ed14-4e04-b708-176eb009953d-attachment.json' type='application/json' size='36'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1641654308286' status='passed' stop='1641654308354'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='3f5ad51b-5ae5-496a-a7d9-870b8589ad9c-attachment.json' type='application/json' size='92'/>
+                        <attachment title='Response' source='fdc6de44-68db-43a9-9cbb-2a3c5b18d06e-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1641654308364' status='passed' stop='1641654308782'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='e6bbf6d5-73a2-433d-8807-00a75647315d-attachment.json' type='application/json' size='92'/>
+                        <attachment title='Response' source='5d04aa9a-bd56-4570-96cb-01749c5fc6d7-attachment.json' type='application/json' size='93'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1641654308791' status='passed' stop='1641654310029'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='b359ed0b-5fff-4afe-99e3-56475e33d334-attachment.png' type='image/png' size='1796966'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>browser.actions is not a function</message>
+                <stack-trace>TypeError: browser.actions is not a function
+                    at Context.&lt;anonymous> (E:\AutoConteshop\test\specs\addingItemCart.js:14:23)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,81 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1641651612201' stop='1641651616401'>
+    <name>Доабвление товара в корзину</name>
+    <title>Доабвление товара в корзину</title>
+    <test-cases>
+        <test-case start='1641651612201' status='broken' stop='1641651616400'>
+            <name>Добавление</name>
+            <title>Добавление</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-97.0.4692.71'/>
+            </parameters>
+            <steps>
+                <step start='1641651612205' status='passed' stop='1641651612345'>
+                    <name>POST /session/:sessionId/window/rect</name>
+                    <title>POST /session/:sessionId/window/rect</title>
+                    <attachments>
+                        <attachment title='Request' source='ae305f82-cd63-48fd-ac57-0d72e38af2d8-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='595b5936-1d31-4691-876c-ad295ec45e56-attachment.json' type='application/json' size='59'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1641651612346' status='passed' stop='1641651614677'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='27f3ebe7-4eaa-46dd-ba7b-941b67f15361-attachment.json' type='application/json' size='36'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1641651614680' status='passed' stop='1641651614707'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='3d6701aa-3af4-4e0a-bb6b-786cb79a2e8d-attachment.json' type='application/json' size='92'/>
+                        <attachment title='Response' source='3bbf5c38-46cf-4ada-b059-73d6375f44f9-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1641651614717' status='passed' stop='1641651614735'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='f1f2a2ab-b5f5-46fd-b5c9-9095e304ec75-attachment.json' type='application/json' size='92'/>
+                        <attachment title='Response' source='92f27673-c93c-4097-be56-e1d885c19949-attachment.json' type='application/json' size='93'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1641651614743' status='passed' stop='1641651615053'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='1fb2ff62-3e1c-4c88-8dac-3a2556ae3f24-attachment.json' type='application/json' size='97'/>
+                        <attachment title='Response' source='e6030e29-fd18-4b23-9cdd-21877ce27f50-attachment.json' type='application/json' size='1071'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1641651615056' status='passed' stop='1641651616399'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='3ad9daac-a7da-46e6-99fa-5134a3922df0-attachment.png' type='image/png' size='1795936'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>elem[prop] is not a function</message>
+                <stack-trace>TypeError: elem[prop] is not a function
+                    at E:\AutoConteshop\node_modules\@wdio\utils\build\shim.js:247:38
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Context.&lt;anonymous> (E:\AutoConteshop\test\specs\addingItemCart.js:14:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
