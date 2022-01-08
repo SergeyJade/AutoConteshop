@@ -12,10 +12,10 @@
     return $ ('#tippy-68 > div > div.tippy-content > div > a')
    }
    get cardProduct () {
-    return $ ('#blockPage1 > div > div:nth-child(2) > div > div.list-post2__text > div.list-post2__title-with-try > div > a')
+    return $ ('//*[@id="blockPage1"]/div/div[2]/div/div[2]/div[1]/div/a')
    }
   get h1TitleProduct () {
-   return $ ('body > div.not_main.page > div.padding3 > div > div.product-view > div.content-over3 > div.content-over3__right.content-over3__right--mod1 > h1')
+   return $ ('h1.title3')
   }
   get buttonAddShoppingCart () {
    return $ ('#addToCart')
