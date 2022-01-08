@@ -1,24 +1,27 @@
 const Header = require('../pageobjects/Header')
 const WomensClothingPage = require('../pageobjects/WomensClothingPage')
 const OnlineStoreBasket = require('../pageobjects/OnlineStoreBasket')
+// const {expect} = require("chai");
 
-describe ('Доабвление товара в корзину', () =>{
-    it ('Добавление',  async () =>{
-        console.log('++++++++++++++++++++++++++++++++++++++++0')
-        await browser.setWindowSize(1920, 1080)
-        console.log('++++++++++++++++++++++++++++++++++++++++1')
-        await Header.open()
-        console.log('++++++++++++++++++++++++++++++++++++++++2')
+describe ('Добавление товара в корзину', () =>{
+    it ('Открытие каталога',  async () =>{
+        await        browser.setWindowSize(1920, 1080)
+        await        Header.open()
         await expect(Header.logo).toBeExisting()
-        console.log('++++++++++++++++++++++++++++++++++++++++3')
-        const actions = driver.actions({bridge: true});
-        let elem=await driver.findElement(By.id("myId"));
-        await actions.move({duration:5000,origin:elem,x:0,y:0}).perform();
-        await Header.unputWomen
-        await Header.unputWomen.click()
-        console.log('++++++++++++++++++++++++++++++++++++++++4')
-        // await (Header.inputWomenCloth).click()
-        console.log('++++++++++++++++++++++++++++++++++++++++5')
+        await        Header.unputWomen.moveTo()
+        await        Header.inputWomenCloth.click()
         await expect(WomensClothingPage.h1Women).toHaveText('Женская одежда')
     })
+    it ('Открытие карточки товара', async () =>{
+        await WomensClothingPage.categoryJumpers.click()
+        await WomensClothingPage.butSabmit.click()
+        await WomensClothingPage.cardProduct.click()
+        await expect (WomensClothingPage.h1TitleProduct).toBeExisting()
+    })
+    it ('Проверка на наличие товара', async () =>{
+        await expect (WomensClothingPage.buttonAddShoppingCart).toHaveText('ДОБАВИТЬ В КОРЗИНУ')
+        await WomensClothingPage.buttonAddShoppingCart.click()
+
+    })
+
 })
