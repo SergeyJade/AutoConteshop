@@ -9,7 +9,7 @@
     return $ ('#narrow-by-list > dd > ol > span:nth-child(2)')
    }
    get butSabmit () {
-    return $ ('#tippy-68 > div > div.tippy-content > div > a')
+    return $ ('//*[@id="narrow-by-list"]/div[1]/a')
    }
    get cardProduct () {
     return $ ('//*[@id="blockPage1"]/div/div[2]/div/div[2]/div[1]/div/a')
