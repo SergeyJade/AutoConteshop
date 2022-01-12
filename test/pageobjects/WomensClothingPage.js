@@ -9,7 +9,7 @@
     return $ ('#narrow-by-list > dd > ol > span:nth-child(2)')
    }
    get butSabmit () {
-    return $ ('//*[@id="narrow-by-list"]/div[1]/a')
+    return $ ('a[class="button amshopby-apply-button conte-button apply_filter"]')
    }
    get cardProduct () {
     return $ ('//*[@id="blockPage1"]/div/div[2]/div/div[2]/div[1]/div/a')

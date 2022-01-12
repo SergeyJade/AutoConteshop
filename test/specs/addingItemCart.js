@@ -10,6 +10,9 @@ function closePopup() {
 
 
 describe ('Добавление товара в корзину', () =>{
+    before('qwe', async () =>{
+        browser.deleteAllCookies()
+    })
     it ('qwe', () =>{
         closePopup()
     })
@@ -30,10 +33,10 @@ describe ('Добавление товара в корзину', () =>{
         await WomensClothingPage.cardProduct.click()
         await expect (WomensClothingPage.h1TitleProduct).toBeExisting()
     })
-    // it ('Проверка на наличие товара', async () =>{
-    //     await expect (WomensClothingPage.buttonAddShoppingCart).toHaveText('ДОБАВИТЬ В КОРЗИНУ')
-    //     await WomensClothingPage.buttonAddShoppingCart.click()
-    //
-    // })
+    it ('Проверка на наличие товара', async () =>{
+        await expect (WomensClothingPage.buttonAddShoppingCart).toHaveText('ДОБАВИТЬ В КОРЗИНУ')
+        await expect (WomensClothingPage.buttonAddShoppingCart).toBeClickable()
+
+    })
 
 })

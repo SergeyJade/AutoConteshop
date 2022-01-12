@@ -28,5 +28,8 @@
         "geckodriver": "^3.0.1",
         "wdio-chromedriver-service": "^7.2.6",
         "wdio-geckodriver-service": "^2.1.0"
+    },
+    "dependencies": {
+        "mocha": "^9.1.3"
     }
 }
